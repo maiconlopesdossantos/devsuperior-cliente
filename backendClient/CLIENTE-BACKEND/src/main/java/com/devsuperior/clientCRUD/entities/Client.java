@@ -2,6 +2,7 @@ package com.devsuperior.clientCRUD.entities;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.time.Instant;
 import java.util.Objects;
 
 @Entity
@@ -13,7 +14,13 @@ public class Client implements Serializable {
     private Long id;
     private String name;
 
-    public Client(){
+    @Column(columnDefinition = "TIMESTAMP WITH TIME ZONE")
+    private Instant createdAt;
+
+    @Column(columnDefinition = "TIMESTAMP WITH TIME ZONE")
+    private Instant updatedAt;
+
+    public Client() {
 
     }
 
@@ -44,6 +51,24 @@ public class Client implements Serializable {
         if (!(o instanceof Client)) return false;
         Client category = (Client) o;
         return getId().equals(category.getId());
+    }
+
+    public Instant getCreatedAt() {
+        return createdAt;
+    }
+
+    public Instant getUpdatedAt() {
+        return updatedAt;
+    }
+
+    @PrePersist
+    public void prePersist() {
+        createdAt = Instant.now();
+    }
+
+    @PreUpdate
+    public void preUpdate() {
+        updatedAt = Instant.now();
     }
 
     @Override

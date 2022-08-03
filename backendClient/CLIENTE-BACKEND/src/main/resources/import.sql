@@ -1,4 +1,20 @@
-INSERT INTO tb_client(name) VALUES ('JOÃO')
-INSERT INTO tb_client(name) VALUES ('MARIA');
-INSERT INTO tb_client(name) VALUES ('JOSÉ');
-INSERT INTO tb_client(name) VALUES ('PEDRO');
+INSERT INTO tb_client (name, created_At) VALUES ('Livros', NOW());
+INSERT INTO tb_client (name, created_At) VALUES ('Eletrônicos', NOW());
+INSERT INTO tb_client (name, created_At) VALUES ('Computadores', NOW());
+INSERT INTO tb_client (name, created_At) VALUES ('Livros', NOW());
+INSERT INTO tb_client (name, created_At) VALUES ('Livros', NOW());
+INSERT INTO tb_client (name, created_At) VALUES ('Eletrônicos', NOW());
+INSERT INTO tb_client (name, created_At) VALUES ('Computadores', NOW());
+INSERT INTO tb_client (name, created_At) VALUES ('Livros', NOW());
+INSERT INTO tb_client (name, created_At) VALUES ('Livros', NOW());
+INSERT INTO tb_client (name, created_At) VALUES ('Eletrônicos', NOW());
+INSERT INTO tb_client (name, created_At) VALUES ('Computadores', NOW());
+INSERT INTO tb_client (name, created_At) VALUES ('Livros', NOW());
+INSERT INTO tb_client (name, created_At) VALUES ('Livros', NOW());
+INSERT INTO tb_client (name, created_At) VALUES ('Eletrônicos', NOW());
+INSERT INTO tb_client (name, created_At) VALUES ('Computadores', NOW());
+INSERT INTO tb_client (name, created_At) VALUES ('Livros', NOW());
+INSERT INTO tb_client (name, created_At) VALUES ('Livros', NOW());
+INSERT INTO tb_client (name, created_At) VALUES ('Eletrônicos', NOW());
+INSERT INTO tb_client (name, created_At) VALUES ('Computadores', NOW());
+INSERT INTO tb_client (name, created_At) VALUES ('Livros', NOW());
